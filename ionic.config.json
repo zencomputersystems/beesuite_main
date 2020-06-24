@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "eleave-v3-master": {
+      "name": "eleave-v3-master",
+      "integrations": {},
+      "type": "angular",
+      "root": "projects/eleave-v3-master"
+    }
+  }
+}
