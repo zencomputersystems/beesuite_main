@@ -6,6 +6,12 @@
       "integrations": {},
       "type": "angular",
       "root": "projects/eleave-v3-master"
+    },
+    "eLeave_admin-V3": {
+      "name": "eLeave_admin-V3",
+      "integrations": {},
+      "type": "angular",
+      "root": "projects/eLeave_admin-V3"
     }
   }
 }
