@@ -171,6 +171,313 @@
           }
         }
       }
+    },
+    "eleave-v3-master": {
+      "root": "projects/eleave-v3-master",
+      "sourceRoot": "projects/eleave-v3-master/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "projects/eleave-v3-master/www",
+            "index": "projects/eleave-v3-master/src/index.html",
+            "main": "projects/eleave-v3-master/src/main.ts",
+            "polyfills": "projects/eleave-v3-master/src/polyfills.ts",
+            "tsConfig": "projects/eleave-v3-master/src/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/eleave-v3-master/src/assets",
+                "output": "projects/eleave-v3-master/src/assets"
+              },
+              {
+                "glob": "**/*.svg",
+                "input": "projects/eleave-v3-master/node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
+            ],
+            "styles": [
+              {
+                "input": "projects/eleave-v3-master/src/theme/variables.scss"
+              },
+              {
+                "input": "projects/eleave-v3-master/src/global.scss"
+              }
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/eleave-v3-master/src/environments/environment.ts",
+                  "with": "projects/eleave-v3-master/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            },
+            "ci": {
+              "progress": false
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "eleave-v3-master:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "eleave-v3-master:build:production"
+            },
+            "ci": {
+              "progress": false
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "eleave-v3-master:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/eleave-v3-master/src/test.ts",
+            "polyfills": "projects/eleave-v3-master/src/polyfills.ts",
+            "tsConfig": "projects/eleave-v3-master/src/tsconfig.spec.json",
+            "karmaConfig": "projects/eleave-v3-master/src/karma.conf.js",
+            "styles": [],
+            "scripts": [],
+            "assets": [
+              {
+                "glob": "projects/eleave-v3-master/src/favicon.ico",
+                "input": "projects/eleave-v3-master/src/",
+                "output": "projects/eleave-v3-master/"
+              },
+              {
+                "glob": "**/*",
+                "input": "projects/eleave-v3-master/src/assets",
+                "output": "projects/eleave-v3-master/src/assets"
+              }
+            ]
+          },
+          "configurations": {
+            "ci": {
+              "progress": false,
+              "watch": false
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["projects/eleave-v3-master/src/tsconfig.app.json", "projects/eleave-v3-master/src/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "eleave-v3-master:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "eleave-v3-master:build:production"
+            }
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "eleave-v3-master:ionic-cordova-build",
+            "devServerTarget": "eleave-v3-master:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "eleave-v3-master:ionic-cordova-build:production",
+              "devServerTarget": "eleave-v3-master:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "eLeave_admin-V3": {
+      "root": "projects/eLeave_admin-V3",
+      "sourceRoot": "projects/eLeave_admin-V3/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "projects/eLeave_admin-V3/www",
+            "index": "projects/eLeave_admin-V3/src/index.html",
+            "main": "projects/eLeave_admin-V3/src/main.ts",
+            "polyfills": "projects/eLeave_admin-V3/src/polyfills.ts",
+            "tsConfig": "projects/eLeave_admin-V3/src/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/eLeave_admin-V3/src/assets",
+                "output": "projects/eLeave_admin-V3/src/assets"
+              },
+              {
+                "glob": "**/*.svg",
+                "input": "projects/eLeave_admin-V3/node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
+            ],
+            "styles": [
+              {
+                "input": "projects/eLeave_admin-V3/src/theme/variables.scss"
+              },
+              {
+                "input": "projects/eLeave_admin-V3/src/global.scss"
+              },
+              "projects/eLeave_admin-V3/node_modules/quill/dist/quill.core.css",
+              "projects/eLeave_admin-V3/node_modules/quill/dist/quill.snow.css"
+            ],
+            "scripts": [
+              "projects/eLeave_admin-V3/node_modules/quill/dist/quill.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/eLeave_admin-V3/src/environments/environment.ts",
+                  "with": "projects/eLeave_admin-V3/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "9mb",
+                  "maximumError": "9mb"
+                }
+              ]
+            },
+            "ci": {
+              "progress": false
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "eLeave_admin-V3:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "eLeave_admin-V3:build:production"
+            },
+            "ci": {
+              "progress": false
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "eLeave_admin-V3:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/eLeave_admin-V3/src/test.ts",
+            "polyfills": "projects/eLeave_admin-V3/src/polyfills.ts",
+            "tsConfig": "projects/eLeave_admin-V3/src/tsconfig.spec.json",
+            "karmaConfig": "projects/eLeave_admin-V3/src/karma.conf.js",
+            "styles": [],
+            "scripts": [],
+            "assets": [
+              {
+                "glob": "projects/eLeave_admin-V3/src/favicon.ico",
+                "input": "projects/eLeave_admin-V3/src/",
+                "output": "projects/eLeave_admin-V3/"
+              },
+              {
+                "glob": "**/*",
+                "input": "projects/eLeave_admin-V3/src/assets",
+                "output": "projects/eLeave_admin-V3/src/assets"
+              }
+            ]
+          },
+          "configurations": {
+            "ci": {
+              "progress": false,
+              "watch": false
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/eLeave_admin-V3/src/tsconfig.app.json",
+              "projects/eLeave_admin-V3/src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "eLeave_admin-V3:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "eLeave_admin-V3:build:production"
+            }
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "eLeave_admin-V3:ionic-cordova-build",
+            "devServerTarget": "eLeave_admin-V3:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "eLeave_admin-V3:ionic-cordova-build:production",
+              "devServerTarget": "eLeave_admin-V3:serve:production"
+            }
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -1,22 +1,20 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from 'projects/eLeave_admin-V3/src/app/login/login.component';
 
 const routes: Routes = [
+  { path: '', component: LoginComponent },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
+    path: 'tryadmin',
+    loadChildren: () => import('../../projects/eLeave_admin-V3/src/app/app.module').then(m => m.AppModule)
+  }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { useHash: true })
   ],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

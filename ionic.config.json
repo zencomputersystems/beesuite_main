@@ -1,6 +1,12 @@
 {
-  "defaultProject": "eleave-v3-master",
+  "defaultProject": "beesuite_main",
   "projects": {
+    "beesuite_main": {
+      "name": "beesuite_main",
+      "integrations": {},
+      "type": "angular",
+      "root": "./"
+    },
     "eleave-v3-master": {
       "name": "eleave-v3-master",
       "integrations": {},
