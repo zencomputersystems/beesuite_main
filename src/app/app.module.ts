@@ -10,11 +10,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomePageModule } from './home/home.module';
 import { AppModule as App2SharedModule } from 'projects/eLeave_admin-V3/src/app/app.module';
+import { AppModule as App1SharedModule } from 'projects/eleave-v3-master/src/app/app.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [ BrowserModule, IonicModule.forRoot(), AppRoutingModule, HomePageModule, App2SharedModule
+  imports: [CommonModule, IonicModule.forRoot(), AppRoutingModule, HomePageModule,
+    App2SharedModule, App1SharedModule
   ],
   providers: [
     StatusBar,
