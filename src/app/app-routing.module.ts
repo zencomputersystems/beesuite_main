@@ -7,10 +7,6 @@ const routes: Routes = [
   {
     path: 'tryuser',
     loadChildren: () => import('../../projects/eleave-v3-master/src/app/app.module').then(m => m.AppModule)
-  },
-  {
-    path: 'tryadmin',
-    loadChildren: () => import('../../projects/eLeave_admin-V3/src/app/app.module').then(m => m.AppModule)
   }
 ];
 
