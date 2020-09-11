@@ -37,9 +37,19 @@
               },
               {
                 "input": "src/global.scss"
+              },
+              {
+                "input": "node_modules/quill/dist/quill.snow.css"
+              },
+              {
+                "input": "node_modules/quill/dist/quill.core.css"
               }
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "node_modules/quill/dist/quill.min.js"
+              }
+            ]
           },
           "configurations": {
             "production": {
@@ -98,8 +108,6 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "styles": [],
-            "scripts": [],
             "assets": [
               {
                 "glob": "favicon.ico",
@@ -128,7 +136,9 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -291,8 +301,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["projects/eleave-v3-master/src/tsconfig.app.json", "projects/eleave-v3-master/src/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "tsConfig": [
+              "projects/eleave-v3-master/src/tsconfig.app.json",
+              "projects/eleave-v3-master/src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "ionic-cordova-build": {
