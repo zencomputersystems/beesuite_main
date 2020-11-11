@@ -9,4 +9,5 @@ refresh:
 
 
 prepare: refresh
+	npm i -D -E @angular/cli
 	ionic repair
