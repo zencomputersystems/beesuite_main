@@ -77,9 +77,25 @@
 
   /** applybutton **/
   --ion-color-applybutton: #43425d;
-  --ion-color-applybutton-rgb: 67,66,93;
+  --ion-color-applybutton-rgb: 67, 66, 93;
   --ion-color-applybutton-contrast: #ffffff;
-  --ion-color-applybutton-contrast-rgb: 255,255,255;
+  --ion-color-applybutton-contrast-rgb: 255, 255, 255;
   --ion-color-applybutton-shade: #3b3a52;
   --ion-color-applybutton-tint: #56556d;
+
+  /** project **/
+  --ion-color-project: #f05858;
+  --ion-color-project-rgb: 240, 88, 88;
+  --ion-color-project-contrast: #ffffff;
+  --ion-color-project-contrast-rgb: 255, 255, 255;
+  --ion-color-project-shade: #d34d4d;
+  --ion-color-project-tint: #f26969;
+
+  /** contract **/
+  --ion-color-contract: #2ecc71;
+  --ion-color-contract-rgb: 46, 204, 113;
+  --ion-color-contract-contrast: #ffffff;
+  --ion-color-contract-contrast-rgb: 255, 255, 255;
+  --ion-color-contract-shade: #28b463;
+  --ion-color-contract-tint: #43d17f;
 }

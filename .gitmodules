@@ -1,8 +1,8 @@
 [submodule "projects/eLeave_admin-V3"]
 	path = projects/eLeave_admin-V3
 	url = https://github.com/zencomputersystems/eLeave_admin-V3.git
-	branch = dev
+
 [submodule "projects/eleave-v3-master"]
 	path = projects/eleave-v3-master
 	url = https://github.com/zencomputersystems/eleave-v3.git
-	branch = dev
+
