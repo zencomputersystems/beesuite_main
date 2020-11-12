@@ -1,0 +1,8 @@
+{
+  "appId": "a.beesuite.app",
+  "appName": "beesuite",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
