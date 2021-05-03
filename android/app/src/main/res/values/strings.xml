@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">beeSuite</string>
+    <string name="title_activity_main">beeSuite</string>
+    <string name="package_name">com.beesuite.app</string>
+    <string name="custom_url_scheme">com.beesuite.app</string>
+</resources>
